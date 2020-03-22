@@ -8,7 +8,7 @@ public class CargoAircraft extends Aircraft{
         super(tag, takeOffWeight, cruisingSpeed, maxFlightAltitude, maxRange, fuelConsumption);
     }
 
-    public static List<Aircraft> CargoAircraftList() {
+    public static List<Aircraft> cargoAircraftList() {
         List<Aircraft> cargoAircraftList = new ArrayList<>();
         cargoAircraftList.add(new CargoAircraft("Airbus A300-600F", 42627, 875, 9600, 4344, 2600));
         cargoAircraftList.add(new CargoAircraft("MD-10-30F", 77110, 908, 10000, 5792, 2700));

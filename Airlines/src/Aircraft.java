@@ -31,7 +31,7 @@ public abstract class Aircraft {
         this.fuelConsumption = fuelConsumption;
     }
 
-    static Integer OverallValueOfSeats(List<? extends Aircraft> list){
+    static Integer overallValueOfSeats(List<? extends Aircraft> list){
         int seats = 0;
         for (Aircraft airCraft : list){
             seats += airCraft.numberSeats;
@@ -39,7 +39,7 @@ public abstract class Aircraft {
         System.out.println("Колличество поссадочных мест: " + seats);
         return seats;
     }
-    static Integer OverallValueOfWeight(List<Aircraft> list){
+    static Integer overallValueOfWeight(List<Aircraft> list){
         int weight = 0;
         for (Aircraft airCraft : list){
             weight += airCraft.takeOffWeight;
@@ -48,7 +48,7 @@ public abstract class Aircraft {
         return weight;
     }
 
-    static List<Aircraft> FuelSorting(List<Aircraft> list, int lowerFlorLimit, int upperFlorLimit) {
+    static List<Aircraft> fuelSorting(List<Aircraft> list, int lowerFlorLimit, int upperFlorLimit) {
         List<Aircraft> sortedFloat = new ArrayList<>();
         System.out.println("Список самолетов по критерию потребления горючего, в диапозоне от " + lowerFlorLimit +
                 " до " + upperFlorLimit + " кг/ч:");

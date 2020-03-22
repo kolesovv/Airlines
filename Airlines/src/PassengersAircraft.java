@@ -8,7 +8,7 @@ public class PassengersAircraft extends Aircraft{
         super(tag, numberSeats, takeOffWeight, cruisingSpeed, maxFlightAltitude, maxRange, fuelConsumption);
     }
 
-    public static List<Aircraft> PassengersAircraftList() {
+    public static List<Aircraft> passengersAircraftList() {
         List<Aircraft> passengersAircraftList = new ArrayList<>();
         passengersAircraftList.add(new PassengersAircraft("Airbus A319", 138, 75000, 840, 11800, 6850, 2600));
         passengersAircraftList.add(new PassengersAircraft("Airbus A320", 168, 77000, 840, 11800, 6150, 2700));
